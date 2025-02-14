@@ -23,7 +23,7 @@ test('Webtable', async({page}) =>{
     console.log(Particular Data : ${data});
 
     for (let i = 2; i<=rowCount ; i++){
-        let allData = await page.locator(//table[@name='BookTable']/tbody/tr[${i}]/td).allTextContents();
+        let allData = await page.locator('//table[@name='BookTable']/tbody/tr[${i}]/td).allTextContents');
         console.log(Row ${i}  : ${allData});
         
     }
