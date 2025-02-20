@@ -21,11 +21,7 @@ await page.goto('https://www.facebook.com/');
 await page.waitForTimeout(3000);
 await page.locator('id=email').fill('Arun');
 await page.fill('id=email',909282);
-await [page.waitForTimeout(3000);
-await page 
-
-]
-
+await page.waitForTimeout(3000);
 
 
 })
