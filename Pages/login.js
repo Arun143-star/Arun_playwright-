@@ -2,7 +2,7 @@ class loginpage{
   constructor(page){
     this.page=page;
     this.username=("//input[@type='text']");
-    this.password=("//input[@type='password'}");
+    this.password=("//input[@type='password']");
     this.loginaAK=("//input[@type='submit']");
      this.logo="//div[normalize-space()='Sauce Labs Backpack']".
   };
