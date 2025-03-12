@@ -1,10 +1,11 @@
-class loginpage{
+exports.loginpage=class loginpage{
+  
   constructor(page){
     this.page=page;
     this.username=("//input[@type='text']");
     this.password=("//input[@type='password']");
     this.loginaAK=("//input[@type='submit']");
-     this.logo="//div[normalize-space()='Sauce Labs Backpack']".
+     this.logo="//div[normalize-space()='Sauce Labs Backpack']"
   };
   async login(username,password){
   await this.page.fill(this.username,username);
@@ -12,7 +13,7 @@ class loginpage{
   await this.page.click(this.loginaAK);
 
   };
-   async navigateTologinpage(){
+   async gotologinpage(){
     await page.goto("https://www.saucedemo.com/v1/")
    }
 

@@ -16,7 +16,7 @@ await page.click("//input[@type='submit']");
 await page.waitForTimeout(3000);
 await page.click("//a[@class='btn_action cart_button']");
 await page.waitForTimeout(3000);
-await page.screenshot({path:"screenshot/arun"+'arun.png'});
+await page.screenshot({path:"screenshot/arun"+'arun.png'});                     
 
 }) 
 
