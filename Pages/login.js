@@ -1,25 +1,32 @@
-exports.loginpage=class loginpage{
-  
+class LoginPage{
+
+
   constructor(page){
-    this.page=page;
-    this.username=("//input[@type='text']");
-    this.password=("//input[@type='password']");
-    this.loginaAK=("//input[@type='submit']");
-     this.logo="//div[normalize-space()='Sauce Labs Backpack']"
-  };
-  async login(username,password){
-  await this.page.fill(this.username,username);
-  await this.page.fill(this.password,password);
-  await this.page.click(this.loginaAK);
+      this.page = page;
+      this.username = '[data-test="username"]';
+      this.password = '[data-test="password"]';
+      this.loginBtn = '#login-button';
+      this.logo = "//div[text()='Swag Labs']";
+      }
+      
+      async login( username , password){
+          await this.page.fill(this.username, username)
+          await this.page.fill(this.password , password)
+          await this.page.click(this.loginBtn)
+      }
+      
+      async navigateToLoginPage(){
+          await this.page.goto('https://www.saucedemo.com/')
+      
+      }
 
-  };
-   async gotologinpage(){
-    await page.goto("https://www.saucedemo.com/v1/")
-   }
+      
 
 
 
+   
 
 
-}module.exports={loginpage};
+}
 
+module.exports = { LoginPage };
