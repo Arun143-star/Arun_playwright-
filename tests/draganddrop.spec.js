@@ -12,7 +12,7 @@ test('draganddrop',async({page})=>{
 
 
 
-const {test, expect} = require('@playwright/test');
+const{test,expect}=require('@playwright/test');
 
 test('drag and drop', async({page}) =>{
     await page.goto("https://testautomationpractice.blogspot.com/");
